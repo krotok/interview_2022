@@ -1,0 +1,92 @@
+Silverfort005 : <module> : (Process Details : (39556, MainProcess)
+Log Message : Start Time : 2023-01-10 19:26:49.755595
+
+Silverfort005 : worker : (Process Details : (39556, MainProcess)
+Log Message : WORKER input_urls:{'url1': 'http://51.105.241.115/interview_app_1/', 'url2': 'http://51.105.241.115/interview_app_2/', 'url3_2': 'http://51.105.241.115/interview_app_1/sample?test=2', 'url3_500': 'http://51.105.241.115/interview_app_1/sample?test=500', 'url3_400': 'http://51.105.241.115/interview_app_1/sample?test=4000', 'url4_2': 'http://51.105.241.115/interview_app_2/sample?test=2', 'url4_500': 'http://51.105.241.115/interview_app_2/sample?test=500', 'url4_4000': 'http://51.105.241.115/interview_app_2/sample?test=4000'}
+
+Silverfort005 : worker : (Process Details : (39556, MainProcess)
+Log Message : MAP <multiprocessing.pool.ApplyResult object at 0x0000021BC9C24DC0>
+
+Silverfort005 : send_requests : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : FROM SEND_REQUESTS:['http://51.105.241.115/interview_app_1/', 'http://51.105.241.115/interview_app_2/', 'http://51.105.241.115/interview_app_1/sample?test=2', 'http://51.105.241.115/interview_app_1/sample?test=500', 'http://51.105.241.115/interview_app_1/sample?test=4000', 'http://51.105.241.115/interview_app_2/sample?test=2', 'http://51.105.241.115/interview_app_2/sample?test=500', 'http://51.105.241.115/interview_app_2/sample?test=4000']
+
+Silverfort005 : send_requests : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Worker 39316 received id: ['http://51.105.241.115/interview_app_1/', 'http://51.105.241.115/interview_app_2/', 'http://51.105.241.115/interview_app_1/sample?test=2', 'http://51.105.241.115/interview_app_1/sample?test=500', 'http://51.105.241.115/interview_app_1/sample?test=4000', 'http://51.105.241.115/interview_app_2/sample?test=2', 'http://51.105.241.115/interview_app_2/sample?test=500', 'http://51.105.241.115/interview_app_2/sample?test=4000']
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_1/ HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_2/ HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_1/sample?test=2 HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_1/sample?test=500 HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_1/sample?test=4000 HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_2/sample?test=2 HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_2/sample?test=500 HTTP/1.1" 200 None
+
+connectionpool : _new_conn : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : Starting new HTTP connection (1): 51.105.241.115:80
+
+connectionpool : _make_request : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : http://51.105.241.115:80 "GET /interview_app_2/sample?test=4000 HTTP/1.1" 200 None
+
+Silverfort005 : send_requests : (Process Details : (39316, SpawnPoolWorker-4)
+Log Message : MAP <!DOCTYPE html>
+<html>
+<head>
+    <title>Silverfort Interview</title>
+</head>
+<body>
+    <p>TM5JS4ppNnDetKJzZTZRlLw89wOezjr4aLFzAW4gBbJYW5R5uMJ5LGdqJC1Lao0I
+CwFM9nYI3wUre387Ql0az5nyvmoljalN6m5ZVXFINPW4Tv47PvTOduqxrRm5qN3j
+WAxtZep4QxcYCrISVFQhDkCeGk2SAzGKXXo8hDqaZJZAstEnOFu8t7RN2Eba3TET
+uI2J9Y59WttXbD0XaMSVpF69oZP5lewmsHjCrAGWmHxa2TzkGkR1PAmzL0ZuDjuF
+ILujEl3vpJlnQqVCa3XGqh76Pp0BsIrVWAfyHhDxlJBmhN8kRBghGzRwerio2VNn
+n92lPCxAVcbH49kI35427InwkQJk2EhcYJghGJDXhICJykftfeipKEvVr3iyQLzR
+MLgYC6PNRTWUf3Oqxr1T2zcAIbV48lSEc9IUs8QUiM2gwyBClqoNM0UDLGnUk5Uj
+Zmmdxy3p4SAsbdcOBqj0h13USAC9GMNuerSyMFKD8e20RAy0KgrE5I60aKXtZkAu
+HgB6NzSYyvqtIcVDbC3INLID0tNsFbqoytZxEiNJaivSMvBSAMvse4hpMdUnP8qu
+b6o5OTPJHPHcI99EmvDShnYoRwHqqW5VbGB4vCSrlZcJHY0vj8qxCW6ZsmhZGwOU
+0cmSH7XEEzhzCAR9egsOONTmppaSPcDle3DR7BU9zyeWCaIHT6OLoA2gkEoImZDP
+f8AIpbPveNC9lZy2l3Qmlu0XfpioALhfF5sPzdHt5ORjuIJInt2cdx4VTKoEmP43
+9rAN2vFbSB6WCexDyokJgfus7kpvzTcvQmqQqNY0X2iaujThiHL2iXcpC1XUFHD7
+fCHtrgGW8rtDKKtKYrMGOSVjN9y2KRj3U4BtAqu83QpOXTXuVeY26mYNFx5dF91s
+PIURqD3CYzRSUMh0kChMhuznPG5lFUGLqwxoYFKpYMTFztml09rBJhcigdcacv3f
+v64YJ91KvhrMWV8jERelcCjXfvMRwdMiBDDSpE5ZaxFuwEpZzTsP73OgUMAhv65V</p>
+</body>
+</html>
+
+Silverfort005 : worker : (Process Details : (39556, MainProcess)
+Log Message : WORKER input_urls:{'url1': 'http://51.105.241.115/interview_app_1/', 'url2': 'http://51.105.241.115/interview_app_2/', 'url3_2': 'http://51.105.241.115/interview_app_1/sample?test=2', 'url3_500': 'http://51.105.241.115/interview_app_1/sample?test=500', 'url3_400': 'http://51.105.241.115/interview_app_1/sample?test=4000', 'url4_2': 'http://51.105.241.115/interview_app_2/sample?test=2', 'url4_500': 'http://51.105.241.115/interview_app_2/sample?test=500', 'url4_4000': 'http://51.105.241.115/interview_app_2/sample?test=4000'}
+
