@@ -43,3 +43,13 @@ for x, y in my_dict.items():
 
 # for word in my_lst:
 #     print(word)
+#Ещё один вариант
+def count_word_occurrences_simple(text, word):
+    words = text.lower().split()
+    target = word.lower()
+    return sum(1 for w in words if w.strip('.,!?():;"\'') == target)
+
+# Пример использования
+text = "Python is great. I love python! Do you like Python too?"
+word = "python"
+print(count_word_occurrences_simple(text, word))  # Вывод: 3
