@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use("TkAgg")  # <-- добавь это
+
 import time
 import numpy as np
 import matplotlib.pyplot as plt
