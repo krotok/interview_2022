@@ -19,6 +19,7 @@ def greet(name: str) -> str:
 
 # --- 3. Magic numbers ---
 # ❌ Bad
+age = 17
 if age > 18:
     pass
 
@@ -42,12 +43,15 @@ def append_item(item, items=None):
 
 # --- 5. Unclear error handling ---
 # ❌ Bad
+def risky_operation():
+    pass
 try:
     risky_operation()
 except:
     pass
 
 # ✅ Good
+import logging
 try:
     risky_operation()
 except ValueError as e:
@@ -81,6 +85,9 @@ with open("file.txt") as f:
     data = f.read()
 
 # --- 9. Avoid deeply nested code ---
+def do_something():
+    pass
+
 # ❌ Bad
 if x:
     if y:
@@ -558,5 +565,7 @@ for x in data:
 
 # ✅ Good
 found = any(x > 10 for x in data)
+
+
 
 # ... (continue to 50+ examples)

@@ -1,5 +1,33 @@
+#Создать валидацию координат вектора с помощю внутри класса  @classmethod
+class Vector:
+    MIN_COORD = 0
+    MAX_COORD = 100
 
+    @classmethod
+    def validate(cls,arg):
+        return cls.MIN_COORD <= arg <= cls.MAX_COORD
+    def __init__(self, x, y):
+        self.x = 0
+        self.y = 0
 
+        # можно так сделать условие  через имя класса
+        #if Vector.validate(x) and Vector.validate(y):
+        # но с self это более универсально, если имя класса изменится. В этом случае интерпритатор поймёт с каким классом раборать
+        #и вместо cls в методе validate подставит класс Vector
+        if self.validate(x) and self.validate(y):                                                          #
+            self.x = x
+            self.y = y
+
+    def get_coordinates(self):
+        return (self.x , self.y)
+
+v = Vector(10,20)
+print(f"Vector: {v.get_coordinates()}")
+print(f"Vector: {Vector.get_coordinates(v)}")
+
+p = Vector(200,300)
+print(f"Vector: {p.get_coordinates()}")
+#######################################################
 class A(object):
     def foo1(self):  # Обычный метод, первым параметром должен быть self, который представляет сам конкретный экземпляр.
         print('Hellow', self)
@@ -39,7 +67,7 @@ my_obj2 = MyClass()
 my_obj3 = MyClass()
 # Вызываем classmethod
 MyClass.total_objects()
-print(MyClass.TOTAL_OBJECTS) #можно разпечатать и так. Зачем же этот  @classmethod???
+print(MyClass.TOTAL_OBJECTS) #можно распечатать и так. Зачем же этот  @classmethod???
 
 # Создаем дочерний класс
 class ChildClass(MyClass):
@@ -73,17 +101,17 @@ class DateTime(object):
 
 dateObj = DateTime.from_string('20-05-1994')
 date_attributes = dir(dateObj)
-print(date_attributes)
+print(f"date_attributes: {date_attributes}")
 
-print(dateObj.__dir__())
+print(f"dateObj:{dateObj.__dir__()}")
 
 #2 ways to get all fields with values
-print(vars(dateObj))
+print(f"All fields:{vars(dateObj)}")
 import pprint
-pprint.pprint(vars(dateObj))
+pprint.pprint(f"All fields pprint:{vars(dateObj)}")
 
 is_valid_date = DateTime.is_valid_date('20-05-1994')
-print(is_valid_date)
+print(f"is_valid_date:{is_valid_date}")
 
 ################################################
 from datetime import date

@@ -271,3 +271,4 @@ def find_max_char_occurrence(input_string: str) -> dict:
 
 my_string = "aaabbbbcccc"
 print(f"Max occurrence: {find_max_char_occurrence(my_string)}")
+

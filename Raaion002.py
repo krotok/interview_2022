@@ -88,3 +88,25 @@ result = 1 if some else 0
 print(result)
 
 ################
+#Заменить имена случайными прозвищами
+import random
+
+names = ['Маша', 'Петя', 'Вася']
+code_names = ['Шпунтик', 'Винтик', 'Фунтик']
+
+for i in range(len(names)):
+    names[i] = random.choice(code_names)
+
+print(names)
+#Пайтовское  решение
+secret_names = map(lambda x: random.choice(['Шпунтик', 'Винтик', 'Фунтик']), names)
+for name in secret_names:
+    print(name)
+
+
+
+
+#TODO Wrong code. Retestcheck it.
+# sentences = "python python the best language"
+# result = reduce(lambda a, x: a + x.count('python'),sentences,0)
+# print(result)

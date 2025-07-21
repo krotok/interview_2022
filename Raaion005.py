@@ -55,5 +55,6 @@ def mysum(*args):
         total += one_item
     return total
 
+
 print(add(10, 20))
 print(mysum(10, 20, 30, 40, 50))

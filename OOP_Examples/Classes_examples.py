@@ -5,7 +5,7 @@ class MyClass:
     def greet(self):
         return f"Hello, {self.name}!"
 
-
+######################################################3
 #Abstract Classes
 from abc import ABC, abstractmethod
 
@@ -23,7 +23,7 @@ class Cat(Animal):
     def sound(self):
         return "Myau!!!"
 
-#Metaclasses
+#############################Metaclasses
 class MyMeta(type):
     def __new__(cls, name, bases, dct):
         dct['added_method'] = lambda self: "New method added by metaclass"

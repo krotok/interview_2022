@@ -5,12 +5,10 @@ print(type(day))
 print(type(month))
 print(type(year))
 
-
 #19 видимость атрибутов классов  ###############
 class A():
-    some_method = 1
-
-    _some_method = 2
+    some_method =   1
+    _some_method =  2
     __some_method = 3
 
 class B(A):
